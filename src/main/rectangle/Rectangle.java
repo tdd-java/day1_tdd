@@ -16,4 +16,8 @@ public class Rectangle {
     public double calculatePerimeter() {
         return 2 * (length + breadth);
     }
+
+    public double calculateArea() {
+        return this.length * this.breadth;
+    }
 }
