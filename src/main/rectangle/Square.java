@@ -1,6 +1,6 @@
 package rectangle;
 
-public class Square {
+public class Square implements Shape {
 
     private final double side;
 
@@ -10,7 +10,6 @@ public class Square {
         }
         this.side = side;
     }
-
 
     public double calculatePerimeter() {
         return side * 4;

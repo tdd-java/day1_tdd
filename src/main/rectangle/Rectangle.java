@@ -1,6 +1,6 @@
 package rectangle;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     private final double breadth;
     private final double length;
 
@@ -13,10 +13,12 @@ public class Rectangle {
     }
 
 
+    @Override
     public double calculatePerimeter() {
         return 2 * (length + breadth);
     }
 
+    @Override
     public double calculateArea() {
         return this.length * this.breadth;
     }
