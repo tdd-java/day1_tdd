@@ -22,4 +22,8 @@ public class Rectangle implements Shape {
     public double calculateArea() {
         return this.length * this.breadth;
     }
+
+    public static Shape getSquare(double side) {
+        return new Rectangle(side, side);
+    }
 }
