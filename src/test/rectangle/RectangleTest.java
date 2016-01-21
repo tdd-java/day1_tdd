@@ -1,7 +1,6 @@
 package rectangle;
 
 import org.junit.Test;
-import org.w3c.dom.css.Rect;
 
 import static junit.framework.TestCase.assertEquals;
 
@@ -9,7 +8,7 @@ public class RectangleTest {
 
     @Test(expected=IllegalStateException.class)
     public void shouldThrowExceptionWhenCreatedWithInvalidParam(){
-        new Rectangle(10.0, -1);
+        Rectangle.getRectangle(10.0, -1);
     }
 
     @Test
